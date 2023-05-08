@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>PortFolio More</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+   <link rel="stylesheet" href="/../static/css/humburger.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Study</h1>
+    </div>
+
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('profile') }}">Profile</a></li>
+          <li><a href="{{ url_for('career') }}">Career</a></li>
+          <li><a href="{{ url_for('skill') }}">Skill</a></li>
+          <li><a href="{{ url_for('license') }}">License</a></li>
+          <li><a href="{{ url_for('product') }}">Product</a></li>
+          <li><a href="{{ url_for('index') }}">Top</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('profile') }}">Profile</a></li>
+        <li><a href="{{ url_for('career') }}">Career</a></li>
+        <li><a href="{{ url_for('skill') }}">Skill</a></li>
+        <li><a href="{{ url_for('license') }}">License</a></li>
+        <li><a href="{{ url_for('product') }}">Product</a></li>
+        <li><a href="{{ url_for('index') }}">Top</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <p>
+    ■Django<br>
+      -DjangoGirlチュートリアルを基にブログを作成。<br>
+       -Django(Python),HTML(jinja2),Bootstrap,sqlite3<br>
+        --CRUD処理<br>
+        --ログイン機能<br>
+        --バリデーション<br>
+      -Djangoを使用した投稿アプリを作成。<br>
+       -Django(Python),HTML(jinja2),CSS,Bootstrap,sqlite3<br>
+        --CRUD処理<br>
+        --ログイン機能<br>
+        --バリデーション<br>
+        <br>
+        <br>
+    ■Flask<br>
+      -Flaskを使用した投稿アプリの作成。<br>
+       -Flask(Pyhon),HTML,CSS,sqlite3<br>
+        --CRUD処理<br>
+        --ログイン機能<br>
+        --バリデーション<br>
+        <br>
+        <br>
+    ■JavaScript<br>
+      -ポートフォリオの作成、schoo,ドットインストールによる自己学習<br>
+       -HTML,CSS,JavaScript<br>
+        --スライダー<br>
+        --モダール<br>
+        --ハンバーガーメニュー<br>
+        --パララックスエフェクト<br>
+        --アコーディオン機能<br>
+        --レスポンシブデザイン<br>
+      <br>
+      <br>
+    ■API通信<br>
+    -TwitterAPIを使用しスクレイピング実装<br>
+    -SpotifyAPIを使用した機械学習の実装<br>
+    -郵便番号検索APIを使用した機能実装<br>
+
+
+
+    </p>
+  </main>
+
+  <script src="/../static/js/humburger.js"></script>
+</body>
+</html>

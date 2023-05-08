@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>PortFolio More</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+   <link rel="stylesheet" href="/../static/css/humburger.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Career</h1>
+    </div>
+
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('profile') }}">Profile</a></li>
+          <li><a href="{{ url_for('study') }}">Study</a></li>
+          <li><a href="{{ url_for('skill') }}">Skill</a></li>
+          <li><a href="{{ url_for('license') }}">License</a></li>
+          <li><a href="{{ url_for('product') }}">Product</a></li>
+          <li><a href="{{ url_for('index') }}">Top</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('profile') }}">Profile</a></li>
+        <li><a href="{{ url_for('study') }}">Study</a></li>
+        <li><a href="{{ url_for('skill') }}">Skill</a></li>
+        <li><a href="{{ url_for('license') }}">License</a></li>
+        <li><a href="{{ url_for('product') }}">Product</a></li>
+        <li><a href="{{ url_for('index') }}">Top</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <p>
+      ■社内ツールによる予約システム作成(2023/4/1～現在)<br>
+      --Pythonフレームワークを使用したWeb開発<br>
+      --担当業務：実装<br>
+      ----streamlitでユーザー登録画面、会議室登録画面、一覧ページ予約画面の実装<br>
+      ----pydantic,sqlalchemy,requests,pandasを使用しバックエンドを構築<br>
+      <br>
+      <br>
+      <br>
+      ■集計支援ツールの作成(2022/4/1～2022/9/30)<br>
+      --全国学力調査におけるCSVファイルデータを加工するデスクトップアプリのPythonで開発<br>
+      --担当業務：要件定義、テスト、各種ドキュメント作成、運用保守、パフォーマンス検証<br>
+      <br>
+      <br>
+      <br>
+      ■化合物情報操作関数の記述(2022/10/1～2023/3/31)<br>
+      --KNIMEのノードをPythonで代用する為のプログラムを構築<br>
+      --担当業務：要件定義、Pythonでのシステム開発<br>
+      <br>
+      <br>
+      <br>
+      ■製薬研究所での業務生産性を高めるシステム環境構築(2021/9/1～2022/3/31)<br>
+      --KNIMEを使用してのCBTデータ整理<br>
+      --KNIMEを使用した機械学習プラットフォームを構築運用<br>
+      ----要件定義<br>
+      ----KNIMEでのシステム開発<br>
+      ----Pythonでのシステム開発<br>
+      ----ユーザビリティ向上の為のバッチファイル作成<br>
+      ----スタンドアロンでの環境構築<br>
+      <br>
+      <br>
+      <br>
+      ■製薬研究所での受託スポット案件対応(2020/12/1～2021/10/31)<br>
+      --CSVファイルデータのpostgresqlロードシステム構築<br>
+      ----自動でCSVファイルのデータをデータベースにロードやアップデートができるシステムを構築<br>
+      -R計算環境構築<br>
+      --Rの拡張パッケージであるpforeachをスタンドアロン環境で構築検証<br>
+      -ポータブルpostgreSQLの環境構築<br>
+      --ポータブルデータベースの動作環境の構築。使用手順書、構築手順書の作成<br>
+      -逆合成解析プログラム動作環境構築<br>
+      --Anaconda環境でAizynthfinderとRDKitをインストールし、逆合成解析ができるシステムを構築<br>
+      -連関規則動作環境の構築<br>
+      --spfmサイトの計算環境の構築,テスト<br>
+      -研究所でのKNIME整理<br>
+      --KNIMEワークフローを要件を確認した上で対象機器以外にアーカイブしバックアップ<br>
+      <br>
+      <br>
+      <br>
+      ■研究所ポータルサイトアップデート業務(2021/6/1～2021/8/31)<br>
+      --医療系ポータルサイトの保守運用<br>
+      <br>
+      <br>
+      <br>
+      ■PubChemデータ取得システムの構築(2020/12/1～2021/5/31)<br>
+      --PubChemFTPサイトより、データ取得とデータベース取り込み<br>
+      --担当業務：PubChemデータの調査、Pythonでのコーディング、単体テスト<br>
+      <br>
+      <br>
+   </p>
+  </main>
+
+  <script src="/../static/js/humburger.js"></script>
+</body>
+</html>

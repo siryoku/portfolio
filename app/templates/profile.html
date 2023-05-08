@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>PortFolio More</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+   <link rel="stylesheet" href="/../static/css/humburger.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Profile</h1>
+    </div>
+
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('career') }}">Career</a></li>
+          <li><a href="{{ url_for('study') }}">Study</a></li>
+          <li><a href="{{ url_for('skill') }}">Skill</a></li>
+          <li><a href="{{ url_for('license') }}">License</a></li>
+          <li><a href="{{ url_for('product') }}">Product</a></li>
+          <li><a href="{{ url_for('index') }}">Top</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('career') }}">Career</a></li>
+        <li><a href="{{ url_for('study') }}">Study</a></li>
+        <li><a href="{{ url_for('skill') }}">Skill</a></li>
+        <li><a href="{{ url_for('license') }}">License</a></li>
+        <li><a href="{{ url_for('product') }}">Product</a></li>
+        <li><a href="{{ url_for('index') }}">Top</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <p>
+    柴田卓と申します。<br>
+    <br>
+    <br>
+    2020年より、製薬研究所の受託案件を主軸として実務を経験しています。<br>
+    主にPythonやKNIMEを使用してのシステムの開発、環境の構築を経験しました。そのためPythonが得意言語となります。
+    今までは大きなプロジェクトというよりは、小さな案件を顧客様とヒヤリングしながら１人で対応することが多かったです。
+    その為、顧客様とのやりとりは臆せず対応することが可能です。<br>
+    <br>
+    今回業務やスキルの幅を広げたく、受託開発エンジニアからWeb開発エンジニアを希望しています。
+    今後は、アジャイル開発やウォーターフォール開発などの手法や未経験の分野にも挑戦していきたいです。<br></p>
+  </main>
+
+  <script src="/../static/js/humburger.js"></script>
+</body>
+</html>

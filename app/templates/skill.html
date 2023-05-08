@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>PortFolio More</title>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+   <link rel="stylesheet" href="/../static/css/humburger.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Skill</h1>
+    </div>
+
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('profile') }}">Profile</a></li>
+          <li><a href="{{ url_for('career') }}">Career</a></li>
+          <li><a href="{{ url_for('study') }}">Study</a></li>
+          <li><a href="{{ url_for('license') }}">License</a></li>
+          <li><a href="{{ url_for('product') }}">Product</a></li>
+          <li><a href="{{ url_for('index') }}">Top</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+  </header>
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('profile') }}">Profile</a></li>
+        <li><a href="{{ url_for('career') }}">Career</a></li>
+        <li><a href="{{ url_for('study') }}">Study</a></li>
+        <li><a href="{{ url_for('license') }}">License</a></li>
+        <li><a href="{{ url_for('product') }}">Product</a></li>
+        <li><a href="{{ url_for('index') }}">Top</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <p>
+    得意技術<br>
+    --Python(継続して使用している言語となります)<br>
+    --FastAPI(現在のプロジェクトで使用しているPythonのフレームワークです)<br>
+    --KNIME(製薬業界でよく使用されているノーコードツールです)<br>
+    --PostgreSQL<br>
+    <br>
+    実務で触ったことのある技術<br>
+    --Windows PowerShell<br>
+    --MySQL<br>
+    --R<br>
+    --Linux<br>
+  </p>
+  </main>
+
+  <script src="/../static/js/humburger.js"></script>
+</body>
+</html>

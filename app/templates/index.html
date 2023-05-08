@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="/../static/css/styles.css">
+</head>
+<body>
+   <h1>Portfolio</h1>
+   <section>
+      <div class="container1">
+         <div class="introduction" id="introduction">Profile</div>
+         <div class="background" id="background">Career</div>
+      </div>
+      <div class="container2">
+         <div class="matter" id="matter">Study</div>
+         <div class="skill" id="skill">Skill</div>
+      </div>
+      <div class="container3">
+         <div class="license" id="license">License</div>
+         <div class="product" id="product">Product</div>
+      </div>
+   </section>
+   <a href="#" id="page-top"><i class="blogicon-chevron-up"></i>Top</a>
+
+
+   <div id="mask" class="hidden"></div>
+   <section id="introduction_modal" class="hidden">
+      <p>
+         柴田卓と申します。<br>
+         <br>
+         <br>
+         2020年より、製薬研究所の受託案件を主軸として実務を経験しています。<br><br>
+         主にPythonやKNIMEを使用してのシステムの開発、環境の構築を経験しました。そのためPythonが得意言語となります。
+         今までは……
+      </p>
+      <a href="{{ url_for('profile') }}">More...</a>
+      <div id="introduction_close">Close</div>
+   </section>
+
+   <section id="background_modal" class="hidden">
+      <p>
+         ・社内ツールによる予約システム作成<br>
+         ・集計支援ツールの作成<br>
+         ・化合物情報操作関数の記述<br>
+         ・製薬研究所での業務生産性を高めるシステム環境構築<br>
+         ・製薬研究所での受託スポット案件対<br>
+         ・研究所ポータルサイトアップデート業務<br>
+         ・PubChemデータ取得システムの構築<br>
+      </p>
+      <a href="{{ url_for('career') }}">More...</a>
+      <div id="background_close">Close</div>
+   </section>
+
+   <section id="matter_modal" class="hidden">
+      <p>
+         ・Django<br>
+         ・Flask<br>
+         ・JavaScript<br>
+         ・API通信
+         <br>
+      </p>
+      <a href="{{ url_for('study') }}">More...</a>
+      <div id="matter_close">Close</div>
+   </section>
+
+   <section id="skill_modal" class="hidden">
+      <p>
+         得意技術<br>
+         ・Python<br>
+         ・FastAPI<br>
+         ・KNIME<br>
+         ・PostgreSQL<br>
+      </p>
+      <a href="{{ url_for('skill') }}">More...</a>
+      <div id="skill_close">Close</div>
+   </section>
+
+   <section id="license_modal" class="hidden">
+      <p>
+         基本情報技術者試験<br>
+         OSS-DB Silver<br>
+      </p>
+      <a href="{{ url_for('license') }}">More...</a>
+      <div id="license_close">Close</div>
+   </section>
+
+   <section id="product_modal" class="hidden">
+      <p>
+      <a href="https://github.com/siryoku">GitHub</a>
+      <div id="product_close">Close</div>
+   </section>
+
+   <script src="/../static/js/main.js"></script>
+</body>
+</html>
